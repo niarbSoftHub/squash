@@ -1,0 +1,205 @@
+{
+  "default-money-style": {
+    "styleType": "money-style",
+    "fontSize": 7.5,
+    "useComma": true,
+    "color": "#FF0000"
+  },
+  "somepersonalStyle": {
+    "styleType": "money-style",
+    "color": "#0000FF",
+    "useComma": false
+  },
+  "textStyles": {
+    "addressStyle": {
+      "styleType": "text-style",
+      "fontSize": 8,
+      "alignment": "center"
+    },
+    "companyNameStyle": {
+      "styleType": "text-style",
+      "fontSize": 14,
+      "alignment": "center",
+      "bold": true,
+      "underline": true
+    },
+    "lineStyle": {
+      "styleType": "text-style",
+      "fontSize": 9,
+      "alignment": "right",
+      "bold": true
+    },
+    "monYrStyle": {
+      "styleType": "text-style",
+      "fontSize": 8,
+      "alignment": "center",
+      "italic": true
+    },
+    "reportTitleStyle": {
+      "styleType": "text-style",
+      "fontSize": 8,
+      "alignment": "left",
+      "bold": true
+    },
+    "sectionHeader": {
+      "styleType": "text-style",
+      "fontSize": 10,
+      "alignment": "left",
+      "bold": true
+    },
+    "tableCell": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "left"
+    },
+    "tableCellBold": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "center",
+      "bold": true
+    },
+    "tableCellCenter": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "center"
+    },
+    "tableCellRight": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "right"
+    },
+    "tableCellRightBold": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "right",
+      "bold": true
+    },
+    "tableCellSub": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "color": "#000000",
+      "alignment": "center"
+    },
+    "tableCellSubCenter": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "color": "#000000",
+      "alignment": "center"
+    },
+    "tableCellSubRight": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "color": "#5D6D7E",
+      "alignment": "right"
+    },
+    "tableHeader": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "center",
+      "bold": true
+    },
+    "totalHeader": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "center",
+      "bold": true
+    },
+    "totalHeaderCenter": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "center",
+      "bold": true
+    },
+    "totalHeaderRight": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "right",
+      "bold": true
+    },
+    "totalHeaderRightBold": {
+      "styleType": "text-style",
+      "fontSize": 7.5,
+      "alignment": "right",
+      "bold": true
+    }
+  },
+  "cellStyles": {
+    "borderedCell": {
+      "styleType": "cell-style",
+      "borderLeft": "solid",
+      "borderLeftColor": "#A0A0A0",
+      "borderRight": "solid",
+      "borderRightColor": "#A0A0A0",
+      "borderTop": "solid",
+      "borderTopColor": "#A0A0A0",
+      "borderBottom": "solid",
+      "borderBottomColor": "#A0A0A0",
+      "backgroundColor": "#EBEBEB"
+    },
+    "detailCell": {
+      "styleType": "cell-style",
+      "borderLeft": "solid",
+      "borderLeftColor": "#A0A0A0",
+      "borderRight": "solid",
+      "borderRightColor": "#A0A0A0",
+      "borderTop": "solid",
+      "borderTopColor": "#A0A0A0",
+      "borderBottom": "solid",
+      "borderBottomColor": "#A0A0A0",
+      "backgroundColor": "#FFFFFF"
+    },
+    "headerCellBottom": {
+      "styleType": "cell-style",
+      "borderLeft": "solid",
+      "borderLeftColor": "#A0A0A0",
+      "borderRight": "solid",
+      "borderRightColor": "#A0A0A0",
+      "borderBottom": "solid",
+      "borderBottomColor": "#A0A0A0",
+      "backgroundColor": "#EBEBEB"
+    },
+    "headerCellTop": {
+      "styleType": "cell-style",
+      "borderLeft": "solid",
+      "borderLeftColor": "#A0A0A0",
+      "borderRight": "solid",
+      "borderRightColor": "#A0A0A0",
+      "borderTop": "solid",
+      "borderTopColor": "#A0A0A0",
+      "backgroundColor": "#EBEBEB"
+    },
+    "nestedInnerBottom": {
+      "styleType": "cell-style",
+      "borderLeft": "solid",
+      "borderLeftColor": "#A0A0A0",
+      "backgroundColor": "#EBEBEB"
+    },
+    "nestedInnerBottomLeft": {
+      "styleType": "cell-style",
+      "backgroundColor": "#EBEBEB"
+    },
+    "nestedInnerTop": {
+      "styleType": "cell-style",
+      "borderBottom": "solid",
+      "borderBottomColor": "#A0A0A0",
+      "backgroundColor": "#EBEBEB"
+    },
+    "nestedParentCell": {
+      "styleType": "cell-style",
+      "borderLeft": "solid",
+      "borderLeftColor": "#A0A0A0",
+      "borderRight": "solid",
+      "borderRightColor": "#A0A0A0",
+      "borderTop": "solid",
+      "borderTopColor": "#A0A0A0",
+      "borderBottom": "solid",
+      "borderBottomColor": "#A0A0A0",
+      "backgroundColor": "#EBEBEB",
+      "paddingLeft": 0.0001,
+      "paddingRight": 0.0001,
+      "paddingTop": 0.0001,
+      "paddingBottom": 0.0001,
+      "vAlignment": "top"
+    }
+  }
+}

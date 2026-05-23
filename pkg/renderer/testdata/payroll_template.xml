@@ -1,0 +1,409 @@
+<report orientation="1" pageSize="3" marginLeft="4" marginTop="4" marginRight="4" marginBottom="4">
+	<pageHeader>
+		<layout-v>
+			<layout-h>
+				<cell ratio="4" styles="topAlignedCell">
+					<text styles="reportTitleStyle">{{reportTitle}}</text>
+				</cell>
+				<cell ratio="4" styles="topAlignedCell">
+					<layout-v>
+						<text styles="companyNameStyle">{{companyName}}</text>
+						<text styles="addressStyle">{{address}}</text>
+						<text styles="monYrStyle">{{monYr}}</text>
+					</layout-v>
+				</cell>
+				<cell ratio="4" styles="topAlignedCell">
+				</cell>
+			</layout-h>
+			<space height="1"/>
+		</layout-v>
+	</pageHeader>
+
+	<details>
+		<group pageBreak="true">
+			<header>
+				<layout-v>
+					<space height="1"/>
+					<layout-h>
+						<cell ratio="6"><text styles="sectionHeader">{{sectionName}}</text></cell>
+						<cell ratio="6"><text styles="lineStyle">Floor : {{lineName}}</text></cell>
+					</layout-h>
+					<space height="2"/>
+					<layout-h styles="tableHeaderRow">
+						<cell ratio="12" styles="borderedCell">
+							<layout-v>
+								<text styles="tableHeader">Card No</text>
+								<text styles="tableHeader">SL No</text>
+							</layout-v>
+						</cell>
+						<cell ratio="22" styles="borderedCell">
+							<text styles="tableHeader">Name</text>
+						</cell>
+						<cell ratio="5" styles="borderedCell">
+							<layout-v>
+								<text styles="tableHeader">G</text>
+								<text styles="tableHeader">r</text>
+								<text styles="tableHeader">a</text>
+								<text styles="tableHeader">d</text>
+								<text styles="tableHeader">e</text>
+							</layout-v>
+						</cell>
+						<cell ratio="12" styles="borderedCell">
+							<text styles="tableHeader">Desig</text>
+						</cell>
+						<cell ratio="86" styles="nestedParentCell">
+							<layout-v>
+								<layout-h height="5.5">
+									<cell ratio="1" styles="nestedInnerTop">
+										<text styles="tableHeader">S A L A R Y</text>
+									</cell>
+								</layout-h>
+								<layout-h>
+									<cell ratio="6" styles="nestedInnerBottomLeft">
+										<layout-v>
+											<text styles="tableHeader">Att</text>
+											<text styles="tableHeader">day</text>
+										</layout-v>
+									</cell>
+									<cell ratio="8" styles="nestedInnerBottom">
+										<text styles="tableHeader">basic</text>
+									</cell>
+									<cell ratio="8" styles="nestedInnerBottom">
+										<text styles="tableHeader">HR</text>
+									</cell>
+									<cell ratio="8" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">MA</text>
+											<text styles="tableHeader">FA</text>
+											<text styles="tableHeader">CA</text>
+										</layout-v>
+									</cell>
+									<cell ratio="10" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">Gross</text>
+											<text styles="tableHeader">Salary</text>
+										</layout-v>
+									</cell>
+									<cell ratio="8" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">Inc</text>
+											<text styles="tableHeader">Amt</text>
+											<text styles="tableHeader">Arrear</text>
+										</layout-v>
+									</cell>
+									<cell ratio="10" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">T. Salary</text>
+											<text styles="tableHeader">A.Bonus</text>
+										</layout-v>
+									</cell>
+									<cell ratio="8" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">Abs</text>
+											<text styles="tableHeader">Adv</text>
+										</layout-v>
+									</cell>
+									<cell ratio="10" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">Deduc</text>
+											<text styles="tableHeader">W.Day</text>
+											<text styles="tableHeader">L/Bill</text>
+										</layout-v>
+									</cell>
+									<cell ratio="10" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">Payable</text>
+											<text styles="tableHeader">Taka</text>
+										</layout-v>
+									</cell>
+								</layout-h>
+							</layout-v>
+						</cell>
+						<cell ratio="26" styles="nestedParentCell">
+							<layout-v>
+								<layout-h height="5.5">
+									<cell ratio="1" styles="nestedInnerTop">
+										<text styles="tableHeader">OVER TIME</text>
+									</cell>
+								</layout-h>
+								<layout-h>
+									<cell ratio="8" styles="nestedInnerBottomLeft">
+										<text styles="tableHeader">Hours</text>
+									</cell>
+									<cell ratio="8" styles="nestedInnerBottom">
+										<text styles="tableHeader">Rate</text>
+									</cell>
+									<cell ratio="10" styles="nestedInnerBottom">
+										<layout-v>
+											<text styles="tableHeader">Payable</text>
+											<text styles="tableHeader">Taka</text>
+										</layout-v>
+									</cell>
+								</layout-h>
+							</layout-v>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<layout-v>
+								<text styles="tableHeader">Total</text>
+								<text styles="tableHeader">Payable</text>
+								<text styles="tableHeader">Taka</text>
+							</layout-v>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<layout-v>
+								<text styles="tableHeader">Actual</text>
+								<text styles="tableHeader">Payable</text>
+								<text styles="tableHeader">Taka</text>
+							</layout-v>
+						</cell>
+						<cell ratio="15" styles="borderedCell">
+							<text styles="tableHeader">Sign</text>
+						</cell>
+						<cell ratio="15" styles="borderedCell">
+							<text styles="tableHeader">Photo</text>
+						</cell>
+						<cell ratio="15" styles="borderedCell">
+							<text styles="tableHeader">Signature</text>
+						</cell>
+					</layout-h>
+				</layout-v>
+			</header>
+			<details>
+				<layout-h>
+					<cell ratio="12" styles="detailCell">
+						<layout-v>
+							<number>{{emp_id}}</number>
+							<number>{{sl_no}}</number>
+						</layout-v>
+					</cell>
+					<cell ratio="22" styles="detailCell">
+						<layout-v>
+							<text styles="tableCellBold">{{emp_name}}</text>
+							<date>{{joining_date}}</date>
+						</layout-v>
+					</cell>
+					<cell ratio="5" styles="detailCell">
+						<text styles="tableCellCenter">{{grade}}</text>
+					</cell>
+					<cell ratio="12" styles="detailCell">
+						<text styles="tableCellCenter">{{designation}}</text>
+					</cell>
+					<cell ratio="6" styles="detailCell">
+						<text styles="tableCellCenter">{{attan_days}}</text>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<money>{{basic}}</money>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<money>{{hr}}</money>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<layout-v>
+							<money>{{ma}}</money>
+							<money>{{fa}}</money>
+							<money>{{ca}}</money>
+						</layout-v>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<money>{{grosspay}}</money>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<layout-v>
+							<money>{{yr_inc}}</money>
+							<money>{{arrear}}</money>
+						</layout-v>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<layout-v>
+							<money>{{total_salary}}</money>
+							<money>{{attendance_bonus}}</money>
+						</layout-v>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<layout-v>
+							<money>{{absence}}</money>
+							<money>{{advamt}}</money>
+						</layout-v>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<layout-v>
+							<money styles="tableCellCenter">{{abs_amt}}</money>
+							<number>0</number>
+						</layout-v>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<money>{{sal_pay}}</money>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<number>{{ot_hours}}</number>
+					</cell>
+					<cell ratio="8" styles="detailCell">
+						<float>{{ot_rate}}</float>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<money>{{ot_amount}}</money>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<money>{{net_payable}}</money>
+					</cell>
+					<cell ratio="10" styles="detailCell">
+						<money styles="somepersonalStyle">{{actual_payable}}</money>
+					</cell>
+					<cell ratio="15" styles="detailCell">
+						<image width="12" height="12">testdata/placeholderfemale.jpg</image>
+					</cell>
+					<cell ratio="15" styles="detailCell">
+						<image width="12" height="12">testdata/placeholderfemale.jpg</image>
+					</cell>
+					<cell ratio="15" styles="detailCell">
+					</cell>
+				</layout-h>
+			</details>
+			<footer>
+				<layout-v>
+					<layout-h styles="totalRow">
+						<cell ratio="12" styles="borderedCell">
+							<layout-v>
+								<text styles="totalHeader">Sub Total</text>
+								<number styles="totalHeader">{{secEmpCount}}</number>
+							</layout-v>
+						</cell>
+						<cell ratio="22" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="5" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="12" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="6" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="8" styles="borderedCell">
+							<money styles="totalHeaderRight">{{secBasic}}</money>
+						</cell>
+						<cell ratio="8" styles="borderedCell">
+							<money styles="totalHeaderRight">{{secHR}}</money>
+						</cell>
+						<cell ratio="8" styles="borderedCell">
+							<layout-v>
+								<money styles="totalHeaderRight">{{secMA}}</money>
+								<money styles="totalHeaderRight">{{secFA}}</money>
+								<money styles="totalHeaderRight">{{secCA}}</money>
+							</layout-v>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<money styles="totalHeaderRightBold">{{secGrosspay}}</money>
+						</cell>
+						<cell ratio="8" styles="borderedCell">
+							<layout-v>
+								<money styles="totalHeaderRight">{{secYrInc}}</money>
+								<money styles="totalHeaderRight">{{secArrear}}</money>
+							</layout-v>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<layout-v>
+								<money styles="totalHeaderRight">{{secTotalSalary}}</money>
+								<money styles="totalHeaderRight">{{secAttendanceBonus}}</money>
+							</layout-v>
+						</cell>
+						<cell ratio="8" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="10" styles="borderedCell">
+							<money styles="totalHeaderRight">{{secAbsAmt}}</money>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<money styles="totalHeaderRightBold">{{secSalPay}}</money>
+						</cell>
+						<cell ratio="8" styles="borderedCell">
+							<number>{{secOTHours}}</number>
+						</cell>
+						<cell ratio="8" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="10" styles="borderedCell">
+							<money styles="totalHeaderRight">{{secOTAmt}}</money>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<money styles="totalHeaderRightBold">{{secNetPayable}}</money>
+						</cell>
+						<cell ratio="10" styles="borderedCell">
+							<money styles="totalHeaderRightBold">{{secActualPayable}}</money>
+						</cell>
+						<cell ratio="15" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="15" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+						<cell ratio="15" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+					</layout-h>
+				</layout-v>
+			</footer>
+		</group>
+	</details>
+
+	<reportFooter>
+		<layout-v>
+			<layout-h styles="grandTotalRow">
+				<cell ratio="12" styles="borderedCell">
+					<layout-v>
+						<text styles="totalHeader">Grand Total</text>
+						<number styles="totalHeader">{{grandEmpCount}}</number>
+					</layout-v>
+				</cell>
+				<cell ratio="22" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="5" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="12" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="6" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="8" styles="borderedCell">
+					<money styles="totalHeaderRight">{{grandBasic}}</money>
+				</cell>
+				<cell ratio="8" styles="borderedCell">
+					<money styles="totalHeaderRight">{{grandHR}}</money>
+				</cell>
+				<cell ratio="8" styles="borderedCell">
+					<layout-v>
+						<money styles="totalHeaderRight">{{grandMA}}</money>
+						<money styles="totalHeaderRight">{{grandFA}}</money>
+						<money styles="totalHeaderRight">{{grandCA}}</money>
+					</layout-v>
+				</cell>
+				<cell ratio="10" styles="borderedCell">
+					<money styles="totalHeaderRightBold">{{grandGrosspay}}</money>
+				</cell>
+				<cell ratio="8" styles="borderedCell">
+					<layout-v>
+						<money styles="totalHeaderRight">{{grandYrInc}}</money>
+						<money styles="totalHeaderRight">{{grandArrear}}</money>
+					</layout-v>
+				</cell>
+				<cell ratio="10" styles="borderedCell">
+					<layout-v>
+						<money styles="totalHeaderRight">{{grandTotalSalary}}</money>
+						<money styles="totalHeaderRight">{{grandAttendanceBonus}}</money>
+					</layout-v>
+				</cell>
+				<cell ratio="8" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="10" styles="borderedCell">
+					<money styles="totalHeaderRight">{{grandAbsAmt}}</money>
+				</cell>
+				<cell ratio="10" styles="borderedCell">
+					<money styles="totalHeaderRightBold">{{grandSalPay}}</money>
+				</cell>
+				<cell ratio="8" styles="borderedCell">
+					<number>{{grandOTHours}}</number>
+				</cell>
+				<cell ratio="8" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="10" styles="borderedCell">
+					<money styles="totalHeaderRight">{{grandOTAmt}}</money>
+				</cell>
+				<cell ratio="10" styles="borderedCell">
+					<money styles="totalHeaderRightBold">{{grandNetPayable}}</money>
+				</cell>
+				<cell ratio="10" styles="borderedCell">
+					<money styles="totalHeaderRightBold">{{grandActualPayable}}</money>
+				</cell>
+				<cell ratio="15" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="15" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+				<cell ratio="15" styles="borderedCell"><text styles="totalHeader">-</text></cell>
+			</layout-h>
+		</layout-v>
+	</reportFooter>
+	<pageFooter>
+		<layout-v>
+			<space height="10"/>
+			<signatures>
+				<signature>Prepared by</signature>
+				<signature>Checked by</signature>
+				<signature>Approved by</signature>
+			</signatures>
+		</layout-v>
+	</pageFooter>
+</report>
